@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Logo = ({ testId }) => (
-  <figure className="" title="Next.js" data-testid={testId}>
-    <Image src="/public/logos/main.jpg" layout="fill" alt="jobdev.io's logo" />
+  <figure className="flex flex-col z-20 shadow-2xl border rounded-full items-center">
+    <img src="main.png" className="h-70 w-70 justify-center" alt="text" data-testId={testId} />
   </figure>
 );
 

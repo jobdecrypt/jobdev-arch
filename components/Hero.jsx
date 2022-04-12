@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Logo from './Logo';
 
 const Hero = () => (
@@ -10,9 +9,17 @@ const Hero = () => (
     </h1>
 
     <p className="lead" data-testid="hero-lead">
-      This site is still in development if you want to check Job's project just click on the link{' '}
-      <a href="https://projects.jobdev.io">Full-Stack App</a>
-      <a href="https://jobdecrypt.github.io">Github Pages</a>
+      This site is still in development if you want to check Job's project just click on the following links <br />
+      <div>
+        <div className="inline-flex text-center align-middle space-x-8">
+          <button>
+            <a href="https://projects.jobdev.io">Full-Stack App</a>
+          </button>
+          <button>
+            <a href="https://jobdecrypt.github.io">Github Pages</a>
+          </button>
+        </div>
+      </div>
     </p>
   </div>
 );

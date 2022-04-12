@@ -8,7 +8,7 @@ const NavBarItem = ({ children, href, className, icon, tabIndex, testId }) => {
   const activeClasses = className ? `${className} ${activeClass}` : activeClass;
 
   return (
-    <span className="d-inline-flex align-items-center navbar-item">
+    <span className="inline-flex items-center navbar-item">
       {icon && <FontAwesomeIcon icon={icon} className="mr-3" />}
       <span className={router.asPath === href ? activeClasses : className} tabIndex={tabIndex} data-testid={testId}>
         {children}
