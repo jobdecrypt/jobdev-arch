@@ -26,7 +26,10 @@ const NavBar = () => {
     <div className="nav-container" data-testid="navbar">
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand className="logo" />
+          {/* good height and width settings for Nav Logo */}
+          <NavbarBrand className="inline-flex h-16 w-20">
+            <img src="/main.png" className="z-10 shadow-md border-2 border-grey-600" />
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar data-testid="navbar-items">
