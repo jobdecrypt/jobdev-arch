@@ -16,7 +16,7 @@ export default function SSRPage({ user }) {
           </p>
           <p>
             Protected server-side rendered pages automatically receive a <code>user</code> prop containing the user
-            profile.
+            profile. test...
           </p>
         </div>
       </div>
